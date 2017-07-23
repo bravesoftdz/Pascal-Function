@@ -1,0 +1,22 @@
+PROGRAM Functions1(INPUT, OUTPUT);
+uses crt;
+
+VAR
+A, B :string;
+{ ------------ Awal Function ------------- }
+FUNCTION cek(x :string) :string;
+var n:integer;
+BEGIN
+  n:=length(x);
+  if n>1 then cek:=' Input lebih dari satu karakter' else
+  cek:='input kurang dari atau sama dengan satu karakter'
+END;
+{ --------------- Akhir Function ---------------- }
+{ ----------------- program utama ----------------- }
+BEGIN
+clrscr;
+WRITE('Input: ');readln(a);
+b:=cek(a);
+WRITELN(b);
+readln;
+END.
